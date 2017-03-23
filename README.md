@@ -30,3 +30,9 @@ Questions asked
 ## 3.Which 5 aircraft models had the most injuries (fatal, serious, minor)?
 ## 4.What was the distribution of fatal injuries during the last 20 years?
 ## 5.What was the survival rate for substantially damaged AND destroyed aircrafts since 1993, showing data for each year. 
+
+Authors
+-------
+
+David Shmilowitz  
+Joseph Kwesi Krog Awwal
