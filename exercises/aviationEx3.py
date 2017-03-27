@@ -48,7 +48,7 @@ def plot(t5_k, t5_v):
             autopct='%1.1f%%', shadow=True, startangle=90)
 
     plt.axis('equal')
-    plt.title("Which 5 aircraft models had the most injuries combined")
+    plt.title('Which 5 aircraft models had the most injuries combined')
     plt.savefig('Question3Plot.png')
     plt.show()
 
