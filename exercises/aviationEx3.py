@@ -1,16 +1,14 @@
-import webget
 import pandas as pd
 import os
 from urllib.parse import urlparse
 import matplotlib.pyplot as plt
 import heapq
 
-def download_csv(url):
-    file = webget.download(url)
-    return os.path.basename(urlparse(url).path)
 
-def csv_to_df(csv):
-    return pd.read_csv(csv, encoding='ISO-8859-2')
+
+def csv_to_df():
+    return pd.read_csv('Aviation.csv', quotechar='"', skipinitialspace=True, delimiter=',',
+                           encoding='latin1').fillna(0)
 
 def ex3_dict_injury(dataframe):
     aircrafts = {}
@@ -44,19 +42,20 @@ def dict_values(d):
     return list(d.values())
 
 def plot(t5_k, t5_v):
-    sizes = [215, 130, 245, 210]
-    colors = ['Gold', 'Yellowgreen', 'lightcoral', 'white', 'red']
-    explode = (0.1, 0.1, 0.1, 0.1, 0.1) #explode first slice
+    colors = ['Gold', 'Green', 'silver', 'blue', 'red']
+    explode = (0.1, 0.0, 0.0, 0.0, 0.0) #explode first slice
     plt.pie(t5_v, explode=explode, labels=t5_k, colors=colors,
-            autopct='%1.1f%%', shadow=True, startangle=80)
+            autopct='%1.1f%%', shadow=True, startangle=90)
 
     plt.axis('equal')
+    plt.title("...")
+    plt.savefig('Question3Plot.png')
     plt.show()
 
 
+
 url = 'https://github.com/edipetres/Depressed_Year/raw/master/Dataset_Assignment/AviationDataset.csv'
-csv = download_csv(url)
-dataframe = csv_to_df(csv)
+dataframe = csv_to_df()
 aircrafts_dict = ex3_dict_injury(dataframe)
 top_5 = top(aircrafts_dict, 5)
 t5_k = dict_keys(top_5)
