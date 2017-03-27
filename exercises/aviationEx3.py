@@ -42,13 +42,13 @@ def dict_values(d):
     return list(d.values())
 
 def plot(t5_k, t5_v):
-    colors = ['Gold', 'Green', 'silver', 'blue', 'red']
+    colors = ['red', 'green', 'cyan', 'blue', 'magenta']
     explode = (0.1, 0.0, 0.0, 0.0, 0.0) #explode first slice
     plt.pie(t5_v, explode=explode, labels=t5_k, colors=colors,
             autopct='%1.1f%%', shadow=True, startangle=90)
 
     plt.axis('equal')
-    plt.title("...")
+    plt.title("Which 5 aircraft models had the most injuries combined")
     plt.savefig('Question3Plot.png')
     plt.show()
 
