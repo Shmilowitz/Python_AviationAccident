@@ -26,7 +26,7 @@ Questions asked
  * Q5:[UPDATED] What was the survival rate (how many died / how many survived) for substantially damaged AND destroyed aircrafts since 1993, showing data for each year. Show results on a stacked bar plot. (see more in notebook 14 - Intro to plotting / example 62.) **
 
 ## 1.How do the flight phases contribute to fatalities?
-![picture alt](http://i.imgur.com/UXO3cjd.png)
+![picture alt](http://i.imgur.com/v3Itbmi.png)
 ## 2.Which 5 states saw the most injuries in the US?
 ![picture alt](http://i.imgur.com/DiBLtzx.png)
 ## 3.Which 5 aircraft models had the most injuries (fatal, serious, minor)?
