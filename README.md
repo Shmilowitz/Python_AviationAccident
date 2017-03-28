@@ -28,7 +28,7 @@ Questions asked
 ## 1.How do the flight phases contribute to fatalities?
 ![picture alt](http://i.imgur.com/UXO3cjd.png)
 ## 2.Which 5 states saw the most injuries in the US?
-![picture alt](http://i.imgur.com/DiBLtzx.png
+![picture alt](http://i.imgur.com/DiBLtzx.png)
 ## 3.Which 5 aircraft models had the most injuries (fatal, serious, minor)?
 ## 4.What was the distribution of fatal injuries during the last 20 years?
 ## 5.What was the survival rate for substantially damaged AND destroyed aircrafts since 1993, showing data for each year. 
