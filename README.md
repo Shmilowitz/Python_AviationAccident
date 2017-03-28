@@ -31,6 +31,7 @@ Questions asked
 ![picture alt](http://i.imgur.com/DiBLtzx.png)
 ## 3.Which 5 aircraft models had the most injuries (fatal, serious, minor)?
 ## 4.What was the distribution of fatal injuries during the last 20 years?
+![picture alt](http://i.imgur.com/Bpnn8oW.png)
 ## 5.What was the survival rate for substantially damaged AND destroyed aircrafts since 1993, showing data for each year. 
 ![picture alt](http://i.imgur.com/E8kvgkZ.png)
 
