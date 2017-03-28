@@ -3,6 +3,7 @@ import os
 from urllib.parse import urlparse
 import matplotlib.pyplot as plt
 import heapq
+import numpy as np
 
 
 
@@ -41,16 +42,39 @@ def dict_keys(d):
 def dict_values(d):
     return list(d.values())
 
+
+def make_autopct(values):
+    def my_autopct(pct):
+        total = sum(values)
+        val = int(round(pct*total/100.0))
+        return '{p:.2f}%  ({v:d})'.format(p=pct,v=val)
+    return my_autopct
+
 def plot(t5_k, t5_v):
     colors = ['red', 'green', 'cyan', 'blue', 'magenta']
     explode = (0.1, 0.0, 0.0, 0.0, 0.0) #explode first slice
     plt.pie(t5_v, explode=explode, labels=t5_k, colors=colors,
-            autopct='%1.1f%%', shadow=True, startangle=90)
+            autopct=make_autopct(t5_v), shadow=True, startangle=90)
 
     plt.axis('equal')
     plt.title('Which 5 aircraft models had the most injuries combined')
     plt.savefig('Question3Plot.png')
     plt.show()
+
+def injuries():
+    fatal = dataframe[:, 23]
+    serious = dataframe[:, 24]
+    minor = dataframe[:, 25]
+
+    fatal.sort()
+
+    print("max fatal injuries: ")
+    print(max(fatal))
+    print("max serious injuries")
+    print(max(serious))
+    print("max minor injuries: ")
+    print(max(minor))
+
 
 
 
